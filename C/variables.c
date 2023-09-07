@@ -4,7 +4,9 @@ void main (){
     // Declarando uma variavel do tipo Char(string/texto) chamada "Nome".
     char Nome[15] = "Vanessa";
     char Sobrenome[20]= "Ferreira";
-
+    // Não se pode iniciar uma variável com números.
+    // Caracteres especiais, também não. Ex.: acentos, ç, etc...
+    
     // Declarando variável do tipo Int(número inteiro) chamada "Idade".
     int Idade = 24;
 
