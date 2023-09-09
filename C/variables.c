@@ -10,5 +10,8 @@ void main (){
     // Declarando variável do tipo Int(número inteiro) chamada "Idade".
     int Idade = 24;
 
+    // Não pode criar variaveis com nomes iguais.
+    // Quando eu estou declarando o tipo de variavel estou necessariamente criando uma nova variavel.
+    Idade = 25;
     printf("Bem vinda jovem %s %s ao mundo bizarro de C, você tem %d anos de idade. \n" ,Nome,Sobrenome,Idade);
 }

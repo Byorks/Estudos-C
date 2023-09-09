@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(){
 
     int VanessaComFome, VanessaComSono;
-    char Fome, Sono;
+    char Fome[1], Sono[1];
 
     
 
@@ -12,24 +13,26 @@ int main(){
     // Se usuario digitou qualquer outra coisa, retornar o erro e não executar o resto do código
 
     printf("Vanessa esta com fome?\n");
-    scanf(" %c", &Fome);
-    if(Fome == "Y"){
-        int VanessaComFome = 1;
+    scanf(" %s", Fome);
+
+    if(strcmp(Fome, "Y") == 0 || strcmp(Fome,"y") == 0){
+        VanessaComFome = 1;
     }
-    else if(Fome == "N"){
-        int VanessaComFome = 0;
+    else if(strcmp(Fome, "N") == 0 || strcmp(Fome,"n") == 0){
+        VanessaComFome = 0; 
     }
     else {
         printf("Digite Y ou N\n");
     }
 
     printf("Vanessa esta com sono?\n");
-    scanf(" %c", &Sono);
-    if(Sono == "Y"){
-        int VanessaComSono = 1;
+    scanf(" %s", Sono);
+
+    if(strcmp(Sono, "Y") == 0 || strcmp(Sono,"y") == 0){
+        VanessaComSono = 1;
     }
-    else if(Sono == "N"){
-        int VanessaComSono = 0;
+    else if(strcmp(Sono, "N") == 0 || strcmp(Sono,"n") == 0){
+        VanessaComSono = 0;
     }
     else {
         printf("Digite Y ou N\n");
