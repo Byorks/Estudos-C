@@ -1,7 +1,10 @@
 # include <stdio.h>
 
-//Multiplica A e B
-
+// Multiplica o parametro A pelo par. B
+double Multi (double A, double B){
+    double Multipli = A * B;
+    return Multipli;
+    }
 
 int main(){
     double A,B,C,Media,Soma,MultiA,MultiB,MultiC;
@@ -13,13 +16,13 @@ int main(){
     scanf("%lf",&C);
        
     // Multiplicar A pelo peso 2
-    MultiA = A * 2;
+    MultiA = Multi(A,2);
 
     // Mult. B pelo peso 3
-    MultiB = B * 3;
+    MultiB = Multi(B,3);
 
     // Mult. C pelo peso 5
-    MultiC = C * 5;
+    MultiC = Multi(C,5);
 
     //Somar o res. das multiplicações
     Soma = MultiA + MultiB + MultiC;
