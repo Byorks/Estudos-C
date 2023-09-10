@@ -6,7 +6,7 @@ int main (){
     
     // and && 
     // or ||
-    if (A >=0 && A <10); 
+    if (A >=0 && A <10);
 
 
     return 0;

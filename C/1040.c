@@ -10,11 +10,7 @@ int main(){
    double A,B,C,D,E,Media,Soma,MultiA,MultiB,MultiC,MultiD,NovaMedia,NovaSoma;
 
     //entrada de inputs
-    scanf("%lf",&A);
-    scanf("%lf",&B);
-    scanf("%lf",&C);
-    scanf("%lf",&D);
-
+    scanf("%lf %lf %lf %lf",&A,&B,&C,&D);
        
     // Multiplicar A pelo peso 2
     MultiA = Multi(A,2);
@@ -42,7 +38,7 @@ int main(){
     if(Media >=5 && Media <=6.9){
         printf("Aluno em exame.\n");
         scanf("%lf", &E);
-        printf("Nota do exame: %.1lf \n", E);
+        printf("Nota do exame: %.1lf\n", E);
 
         NovaSoma = Media + E;
         NovaMedia = NovaSoma / 2;
