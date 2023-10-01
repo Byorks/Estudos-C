@@ -10,6 +10,12 @@ int main(){
     scanf("%d", &numMin);
     scanf("%d", &numMax);
 
+    if(numMin > numMax){
+        int temp = numMin;
+        numMin = numMax;
+        numMax = temp;
+    }
+
     for (int i = numMin; i <= numMax; i++){
         result = i % 13;
 
