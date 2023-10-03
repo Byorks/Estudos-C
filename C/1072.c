@@ -14,8 +14,6 @@ int main(){
         if (N < 10 || N > 20){
         printf("%d = N, está fora de 10 e 20\n", N);
             out ++;
-            //cont0++;
-            //out += cont0; 
         }
         else{
             in++;
